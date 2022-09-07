@@ -1,5 +1,14 @@
 # Drum Machine 🥁
 
+## Description 
+
+A **React Drum Machine** app where users can click on drum pad elements to trigger audio samples unique to that pad / key on the keyboard.
+
+A FreeCodeCamp Front End Development Libraries project, with the objective to fulfill the user stories and get all of the tests to pass.
+
+## Built with
+![image](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
 ## Link
 []()
 
