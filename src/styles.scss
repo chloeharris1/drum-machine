@@ -1,0 +1,80 @@
+// Google font
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+// Sass variables
+$main-font: 'Permanent Marker',
+cursive;
+// Sass mixins
+@mixin box-shadow ($x,
+$y,
+$blur,
+$c) {
+    -webkit-box-shadow: $x $y $blur $c;
+    -moz-box-shadow: $x $y $blur $c;
+    -ms-box-shadow: $x $y $blur $c;
+    box-shadow: $x $y $blur $c;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+// Universal styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    // Background
+    font-family: $main-font;
+    background-image: url(../public/nathan-dumlao-87r__24oABU-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    display: flex;
+    width: 65%;
+    height: 25%;
+    justify-content: center;
+}
+
+#drum-machine {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 75%;
+    background-color: white;
+    .drum-container {
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        align-content: center;
+        min-width: 60%;
+        height: 50%;
+    }
+    .drum-pad {
+        flex-shrink: 1;
+        z-index: 1;
+        margin: 0.4em;
+        text-align: center;
+    }
+    .display-container {
+        display: flex;
+        min-width: 40%;
+        height: 50%;
+    }
+}

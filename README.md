@@ -9,12 +9,17 @@ A FreeCodeCamp Front End Development Libraries project, with the objective to fu
 ## Built with
 ![image](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
+![image](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+
 ## Link
 []()
 
 ## Credits
 
-Favicon from:
+Background image: 
+[Upsplash]('https://unsplash.com/collections/871778/texture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText')
+
+Favicon:
 [Freepik]('https://www.flaticon.com/free-icons/drum')
 
 ## License
@@ -24,4 +29,5 @@ Licensed under the MIT license.
 [Email Me](Chloe.a.harris17@gmail.com) if you have any questions.
 
 Check out more of my work on [GitHub](https://github.com/chloeharris1).
+  
 
