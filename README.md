@@ -16,8 +16,12 @@ A FreeCodeCamp Front End Development Libraries project, with the objective to fu
 
 ## Credits
 
-Background image: 
-[Upsplash]('https://unsplash.com/collections/871778/texture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText')
+Background images from Upsplash: 
+
+[Nathan Dumlao]('https://unsplash.com/@nate_dumlao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText')
+
+[Marjan Blan]('https://unsplash.com/@marjan_blan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText')
+
 
 Favicon:
 [Freepik]('https://www.flaticon.com/free-icons/drum')

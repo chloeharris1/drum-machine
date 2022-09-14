@@ -49,6 +49,16 @@ $c) {
     width: 65%;
     height: 25%;
     justify-content: center;
+    background-image: url(../public/Duct-Tape.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    h1 {
+        font-size: 2.5rem;
+        transform: rotate(-10deg);
+        margin-top: 7%;
+    }
 }
 
 #drum-machine {
@@ -58,23 +68,38 @@ $c) {
     align-items: center;
     width: 65%;
     height: 75%;
-    background-color: white;
     .drum-container {
         display: grid;
-        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(50px, 1fr));
+        grid-gap: 10px;
         align-content: center;
+        justify-items: center;
         min-width: 60%;
-        height: 50%;
+        min-height: 50%;
     }
     .drum-pad {
+        display: flex;
         flex-shrink: 1;
         z-index: 1;
-        margin: 0.4em;
+        padding: 20%;
         text-align: center;
+        border: 3px solid silver;
+        background-color: white;
+        @include border-radius(50%);
     }
     .display-container {
         display: flex;
-        min-width: 40%;
+        min-width: 30%;
         height: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../public/marjan-blan-marjanblan--Vc-ok8CeBU-unsplash.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        #display {
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
     }
 }
