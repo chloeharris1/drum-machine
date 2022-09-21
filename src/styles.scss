@@ -3,103 +3,85 @@
 // Sass variables
 $main-font: 'Permanent Marker',
 cursive;
-// Sass mixins
-@mixin box-shadow ($x,
-$y,
-$blur,
-$c) {
-    -webkit-box-shadow: $x $y $blur $c;
-    -moz-box-shadow: $x $y $blur $c;
-    -ms-box-shadow: $x $y $blur $c;
-    box-shadow: $x $y $blur $c;
-}
-
-@mixin border-radius($radius) {
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    -ms-border-radius: $radius;
-    border-radius: $radius;
-}
-
 // Universal styles
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $main-font;
 }
 
-.app {
+body {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
-    min-height: 100%;
-    // Background
-    font-family: $main-font;
     background-image: url(../public/nathan-dumlao-87r__24oABU-unsplash.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
-.header {
+.wrapper {
     display: flex;
-    width: 65%;
-    height: 25%;
-    justify-content: center;
-    background-image: url(../public/Duct-Tape.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    text-align: center;
-    h1 {
-        font-size: 2.5rem;
-        transform: rotate(-10deg);
-        margin-top: 7%;
-    }
-}
-
-#drum-machine {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 65%;
-    height: 75%;
-    .drum-container {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(50px, 1fr));
-        grid-gap: 10px;
-        align-content: center;
-        justify-items: center;
-        min-width: 60%;
-        min-height: 50%;
-    }
-    .drum-pad {
+    height: 675px;
+    // background-color: red;
+    margin: 10px;
+    #drum-machine {
         display: flex;
-        flex-shrink: 1;
-        z-index: 1;
-        padding: 20%;
-        text-align: center;
-        border: 3px solid silver;
-        background-color: white;
-        @include border-radius(50%);
-    }
-    .display-container {
-        display: flex;
-        min-width: 30%;
-        height: 50%;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: url(../public/marjan-blan-marjanblan--Vc-ok8CeBU-unsplash.jpg);
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        #display {
-            font-size: 1.5rem;
-            padding: 1rem;
+        // Drum sound display container
+        .display-container {
+            display: flex;
+            flex-direction: column;
+            height: 50%;
+            width: 65%;
+            justify-content: flex-start;
+            align-items: center;
+            background-image: url(../public/marjan-blan-marjanblan--Vc-ok8CeBU-unsplash.jpg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            .header {
+                background-image: url(../public/Duct-Tape.png);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                text-align: center;
+                height: 113px;
+                width: 100%;
+                margin-top: -3.125rem;
+                z-index: 1;
+                h1 {
+                    font-size: 1.5rem;
+                    transform: rotate(-10deg);
+                    margin-top: 35px;
+                }
+            }
+            #display {
+                padding-top: 35%;
+                font-size: 1.3rem;
+            }
+        }
+        // Drum pads container
+        .drum-container {
+            display: grid;
+            grid: 1fr / auto auto auto;
+            gap: 0.5rem;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            justify-content: center;
+            // Blur background
+            background: #ffffff1a;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 30px #0000002a;
+            border-radius: 3px;
+            border-width: 1px;
+            .drum-pad {
+                cursor: pointer;
+            }
         }
     }
 }

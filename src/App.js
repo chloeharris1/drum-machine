@@ -2,7 +2,6 @@ import React from 'react';
 import './Styles.scss';
 
 import DrumContainer from './components/DrumContainer';
-// import drumSounds from './drumSounds';
 
 class App extends React.Component {
   constructor(props) {
@@ -21,17 +20,19 @@ class App extends React.Component {
 
 render() {
   return (
-  <div className='app'>
-    <div className='header'>
-      <h1>Drum Machine</h1>
-    </div>
+  <div className='wrapper'>
     <div id="drum-machine">
-        <DrumContainer
-        updateDisplay={this.displaySoundName}
-        handleKeyPress={this.handleKeyPress}/>
       <div className="display-container">
-        <p id="display">{this.state.display}</p>
+        <div className='header'>
+          <h1>Drum Machine</h1>
+        </div>
+        <div id="display">
+          {this.state.display}
+          </div>
       </div>
+      <DrumContainer
+      updateDisplay={this.displaySoundName}
+      handleKeyPress={this.handleKeyPress}/>
     </div>
   </div>
   );
