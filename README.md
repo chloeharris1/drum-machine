@@ -21,13 +21,13 @@ A FreeCodeCamp Front End Development Libraries project, with the objective to fu
 
 ![image](https://img.shields.io/badge/Unsplash-000000?style=for-the-badge&logo=Unsplash&logoColor=white)
 
-[Nathan Dumlao]('https://unsplash.com/@nate_dumlao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText')
+[Nathan Dumlao](https://unsplash.com/@nate_dumlao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-[Marjan Blan]('https://unsplash.com/@marjan_blan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText')
+[Marjan Blan](https://unsplash.com/@marjan_blan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 
 Favicon:
-[Freepik]('https://www.flaticon.com/free-icons/drum')
+[Freepik](https://www.flaticon.com/free-icons/drum)
 
 ## License
 Licensed under the MIT license.
