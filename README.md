@@ -12,7 +12,10 @@ A FreeCodeCamp Front End Development Libraries project, with the objective to fu
 ![image](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
 ## Link
-[]()
+[Drum Machine](https://react-app-drum-machine.netlify.app/)
+
+## Snapshot 
+![image](./public/Screenshot.png)
 
 ## Credits
 
