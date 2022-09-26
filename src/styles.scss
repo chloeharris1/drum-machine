@@ -11,6 +11,13 @@ cursive;
     font-family: $main-font;
 }
 
+html {
+    // stretch to the full minimal viewport height
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -19,49 +26,86 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    flex-grow: 1;
 }
 
 .wrapper {
     display: flex;
-    height: 675px;
-    // background-color: red;
+    height: 500px;
+    // width: 675px;
     margin: 10px;
+    @media only screen and (min-width: 695px) {
+        width: 675px;
+    }
+    @media only screen and (max-width: 694px) {
+        height: 675px;
+    }
+    @media only screen and (max-width: 386px) {
+        justify-content: center;
+        margin: 5px;
+    }
     #drum-machine {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        @media only screen and (max-width: 694px) {
+            flex-direction: column;
+        }
+        @media only screen and (max-width: 386px) {
+            width: 85%;
+        }
         // Drum sound display container
         .display-container {
             display: flex;
             flex-direction: column;
-            height: 50%;
-            width: 65%;
+            height: 65%;
+            width: 50%;
             justify-content: flex-start;
             align-items: center;
             background-image: url(../public/marjan-blan-marjanblan--Vc-ok8CeBU-unsplash.jpg);
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
+            @media only screen and (max-width: 386px) {
+                height: 50%;
+                width: 60%;
+            }
             .header {
                 background-image: url(../public/Duct-Tape.png);
                 background-position: center;
                 background-size: contain;
                 background-repeat: no-repeat;
                 text-align: center;
-                height: 113px;
+                height: 95px;
                 width: 100%;
                 margin-top: -3.125rem;
                 z-index: 1;
+                @media only screen and (max-width: 694px) {
+                    height: 113px;
+                }
+                @media only screen and (max-width: 386px) {
+                    margin-top: -2.125rem;
+                }
                 h1 {
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                     transform: rotate(-10deg);
-                    margin-top: 35px;
+                    margin-top: 30px;
+                    @media only screen and (max-width: 694px) {
+                        font-size: 1.375rem;
+                        margin-top: 37px;
+                    }
+                    @media only screen and (max-width: 386px) {
+                        font-size: 1.3rem;
+                    }
                 }
             }
             #display {
-                padding-top: 35%;
+                padding-top: 30%;
                 font-size: 1.3rem;
             }
         }
@@ -79,6 +123,10 @@ body {
             box-shadow: 0 0 30px #0000002a;
             border-radius: 3px;
             border-width: 1px;
+            @media only screen and (max-width: 386px) {
+                margin: 0.2rem;
+                padding: 0.2rem;
+            }
             .drum-pad {
                 cursor: pointer;
             }

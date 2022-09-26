@@ -1,5 +1,6 @@
 import React from "react";
 
+// Drum pad styling on click and key press
 const activeStyle = {
     minWidth: '6.25rem',
     height: '6.25rem',
@@ -8,7 +9,7 @@ const activeStyle = {
     borderRadius: '50%',
     fontSize: '1.1rem',
     zIndex: '1',
-    border: '2px solid silver',
+    border: '3px solid silver',
     boxShadow: '0 0 2px 2px darkgray',
     background: 'radial-gradient(darkgray, #fff)',
     backgroundRepeat: 'no-repeat',
@@ -26,7 +27,7 @@ const inactiveStyle = {
     fontSize: '1.1rem',
     zIndex: '1',
     backgroundColor: 'white',
-    border: '2px solid silver',
+    border: '3px solid silver',
     boxShadow: '0 0 2px 2px darkgray'
 }
 
@@ -59,7 +60,7 @@ class DrumPad extends React.Component {
             this.playSound();
         }
     }
-
+    // Set drum pad styling on key press and click 
     activatePad(){
         if(this.state.padStyle.background === 'radial-gradient(darkgray, #fff)'){
             this.setState({
