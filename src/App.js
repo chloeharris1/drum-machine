@@ -1,5 +1,5 @@
 import React from 'react';
-import './Styles.scss';
+import './styles.scss';
 
 import DrumContainer from './components/DrumContainer';
 
